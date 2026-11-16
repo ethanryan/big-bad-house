@@ -46,8 +46,18 @@ export default function Home() {
             <h3 className={styles.aboutHeading}>Why Big Bad?</h3>
             <p className={styles.aboutCopy}>
               We love stories with conflict, and nothing stirs up trouble quite
-              like a Big Bad—the villain, monster, or antagonist who makes a
-              story worth telling. Big Bad House is the kind of place where the
+              like a{" "}
+              <a
+                className={styles.inlineLink}
+                href="https://en.wikipedia.org/wiki/Big_Bad"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Big Bad (opens in a new tab)"
+              >
+                Big Bad
+              </a>
+              &nbsp;— the villain, monster, or antagonist who makes a story worth
+              telling. Big Bad House is the kind of place where the
               Big Bad Wolf would feel welcome.
             </p>
           </div>

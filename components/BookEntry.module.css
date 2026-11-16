@@ -38,7 +38,8 @@
 
 .blurb {
   margin-top: 1rem;
-  max-width: 38ch;
+  max-width: 48ch;
+  text-wrap: pretty;
 }
 
 .buy {
