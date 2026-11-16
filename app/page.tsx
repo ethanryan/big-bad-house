@@ -14,7 +14,7 @@ export default function Home() {
         </h1>
         <div className={styles.strap}>
           <p className={styles.descriptor}>{site.descriptor}</p>
-          <p className={styles.motto}>Good stories. Bad behavior.</p>
+          <p className={styles.motto}>Good Stories. Bad Behavior.</p>
         </div>
         <p className={styles.lede}>{site.tagline}</p>
       </header>
@@ -37,11 +37,20 @@ export default function Home() {
           <h2 id="about-heading" className={styles.sectionLabel}>
             About
           </h2>
-          <p className={styles.aboutCopy}>
-            Big Bad House is an independent publishing and media company. The
-            books featured here were originally self-published by their authors
-            and are available in print and ebook editions.
-          </p>
+          <div className={styles.aboutBody}>
+            <p className={styles.aboutCopy}>
+              Big Bad House is an independent publishing and media company. The
+              books featured here were originally self-published by their
+              authors and are available in print and ebook editions.
+            </p>
+            <h3 className={styles.aboutHeading}>Why Big Bad?</h3>
+            <p className={styles.aboutCopy}>
+              We love stories with conflict, and nothing stirs up trouble quite
+              like a Big Bad—the villain, monster, or antagonist who makes a
+              story worth telling. Big Bad House is the kind of place where the
+              Big Bad Wolf would feel welcome.
+            </p>
+          </div>
         </section>
       </main>
 

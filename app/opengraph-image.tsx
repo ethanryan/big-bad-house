@@ -47,8 +47,7 @@ export default async function Image() {
             borderTop: "8px solid #16130f",
             paddingTop: 20,
             fontSize: 40,
-            textTransform: "uppercase",
-            letterSpacing: "0.04em",
+            letterSpacing: "0.01em",
           }}
         >
           <span>{site.descriptor}</span>

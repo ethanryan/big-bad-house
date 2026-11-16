@@ -40,9 +40,14 @@ export function BookEntry({ book, index }: Props) {
         </p>
         {book.blurb && <p className={styles.blurb}>{book.blurb}</p>}
       </div>
-      <a className={styles.buy} href={book.amazonUrl}>
+      <a
+        className={styles.buy}
+        href={book.amazonUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`View on Amazon: ${book.title} (opens in a new tab)`}
+      >
         View on Amazon
-        <span className="visually-hidden">: {book.title}</span>
         <span className={styles.arrow} aria-hidden="true">
           ↗
         </span>
