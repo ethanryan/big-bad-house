@@ -22,7 +22,7 @@ export default async function Image() {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: "56px 64px",
-          background: "#f2ede3",
+          background: "#ffffff",
           color: "#16130f",
           fontFamily: "Anton",
         }}
@@ -37,7 +37,7 @@ export default async function Image() {
           }}
         >
           <span>Big Bad</span>
-          <span style={{ color: "#c22a1e" }}>House</span>
+          <span style={{ color: "#7c3aed" }}>House</span>
         </div>
         <div
           style={{

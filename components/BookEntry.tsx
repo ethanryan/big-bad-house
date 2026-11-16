@@ -9,7 +9,6 @@ type Props = {
 
 export function BookEntry({ book, index }: Props) {
   const titleId = `${book.slug}-title`;
-  const number = String(index + 1).padStart(2, "0");
 
   return (
     <article
@@ -23,17 +22,14 @@ export function BookEntry({ book, index }: Props) {
             width={book.cover.width}
             height={book.cover.height}
             alt={`Cover of ${book.title}`}
-            sizes="(min-width: 960px) 22vw, (min-width: 640px) 40vw, 70vw"
+            sizes="(min-width: 768px) 192px, 224px"
             priority={index === 0}
           />
         </div>
       )}
       <div className={styles.text}>
         <p className={styles.kicker}>
-          <span className={styles.number} aria-hidden="true">
-            {number}
-          </span>
-          <span>{book.category}</span>
+          {book.category}
         </p>
         <h3 id={titleId} className={styles.title}>
           {book.title}
@@ -43,14 +39,14 @@ export function BookEntry({ book, index }: Props) {
           {book.author}
         </p>
         {book.blurb && <p className={styles.blurb}>{book.blurb}</p>}
-        <a className={styles.buy} href={book.amazonUrl}>
-          View on Amazon
-          <span className="visually-hidden">: {book.title}</span>
-          <span className={styles.arrow} aria-hidden="true">
-            ↗
-          </span>
-        </a>
       </div>
+      <a className={styles.buy} href={book.amazonUrl}>
+        View on Amazon
+        <span className="visually-hidden">: {book.title}</span>
+        <span className={styles.arrow} aria-hidden="true">
+          ↗
+        </span>
+      </a>
     </article>
   );
 }

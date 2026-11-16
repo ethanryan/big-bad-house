@@ -14,8 +14,9 @@ export default function Home() {
         </h1>
         <div className={styles.strap}>
           <p className={styles.descriptor}>{site.descriptor}</p>
-          <p className={styles.huff}>Huff. Puff. Publish.</p>
+          <p className={styles.motto}>Good stories. Bad behavior.</p>
         </div>
+        <p className={styles.lede}>{site.tagline}</p>
       </header>
 
       <main>
@@ -23,13 +24,13 @@ export default function Home() {
           <h2 id="books-heading" className={styles.sectionLabel}>
             Books
           </h2>
-          <ol className={styles.bookList}>
+          <ul className={styles.bookList}>
             {books.map((book, index) => (
               <li key={book.slug}>
                 <BookEntry book={book} index={index} />
               </li>
             ))}
-          </ol>
+          </ul>
         </section>
 
         <section className={styles.about} aria-labelledby="about-heading">
@@ -45,7 +46,9 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <p className={styles.footerName}>{site.name}</p>
+        <div className={styles.footerInner}>
+          <p className={styles.footerName}>{site.name}</p>
+        </div>
       </footer>
     </>
   );

@@ -1,12 +1,12 @@
 :root {
-  --paper: #f2ede3;
+  --paper: #ffffff;
   --ink: #16130f;
-  --ink-muted: #5c554b;
+  --ink-muted: #57534e;
   --rule: #16130f;
-  --accent: #c22a1e;
+  --accent: #7c3aed;
 
-  --gutter: clamp(1rem, 4vw, 3rem);
-  --max-width: 90rem;
+  --gutter: clamp(1.25rem, 6vw, 5rem);
+  --max-width: 84rem;
 
   --font-display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
   --font-text: "Newsreader", Georgia, "Times New Roman", serif;
